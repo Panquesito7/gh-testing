@@ -1,0 +1,16 @@
+name: Directory writer
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Build directory
+        uses: TheAlgorithms/scripts/directory_md@tjgurwara99/revert-cbc710e1ec650a4fc7ac622ebec53de221442c79
+        with:
+          language: gh-testing
+          working-directory: .
+          filetypes: .cpp,.hpp,.h
+          ignored-directories: doc/
