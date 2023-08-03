@@ -1,3 +1,3 @@
-# sm_testing
+# GH Testing
 
-Submodules Alternative testing!
+GitHub testing stuff, such as actions.
